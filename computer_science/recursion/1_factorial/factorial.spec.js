@@ -22,7 +22,7 @@ describe('factorial', () => {
   test("doesn't accept negatives", () => {
     expect(factorial(-25)).toBe(undefined);
   });
-  test.skip("doesn't accept floats", () => {
+  test("doesn't accept floats", () => {
     expect(factorial(5.4)).toBe(undefined);
   });
   test.skip("doesn't accept a number as a string", () => {

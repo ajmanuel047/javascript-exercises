@@ -1,12 +1,12 @@
 const factorial = function (n) {
    let result = 1;
-    if(Math.sign(n) == 1){
+    if(Math.sign(n) == 1 && Number.isInteger(n) == true){
       if (n <= 0) {
         return 1;
       }
        console.log(n)
        result = n * factorial(n - 1);
-    } else if(Math.sign(n) == -1) {
+    } else if(Math.sign(n) == -1 || Number.isInteger(n) == false) {
       result = undefined
     }
     return result
