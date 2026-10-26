@@ -25,10 +25,10 @@ describe('factorial', () => {
   test("doesn't accept floats", () => {
     expect(factorial(5.4)).toBe(undefined);
   });
-  test.skip("doesn't accept a number as a string", () => {
+  test("doesn't accept a number as a string", () => {
     expect(factorial('5')).toBe(undefined);
   });
-  test.skip("doesn't accept strings", () => {
+  test("doesn't accept strings", () => {
     expect(factorial('foo')).toBe(undefined);
   });
   test.skip("doesn't accept arrays", () => {
