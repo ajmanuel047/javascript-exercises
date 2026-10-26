@@ -31,7 +31,7 @@ describe('factorial', () => {
   test("doesn't accept strings", () => {
     expect(factorial('foo')).toBe(undefined);
   });
-  test.skip("doesn't accept arrays", () => {
+  test("doesn't accept arrays", () => {
     expect(factorial([5])).toBe(undefined);
   });
 });

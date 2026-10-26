@@ -6,7 +6,7 @@ const factorial = function (n) {
       }
        console.log(n)
        result = n * factorial(n - 1);
-    } else if(Math.sign(n) == -1 || Number.isInteger(n) == false || typeof value == 'string') {
+    } else if(Math.sign(n) == -1 || Number.isInteger(n) == false || typeof n == 'string') {
       result = undefined
     }
     return result
