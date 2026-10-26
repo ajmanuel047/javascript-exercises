@@ -1,8 +1,15 @@
 const factorial = function (n) {
-  if (n <= 0) {
-    return 1;
-  }
-  return n * factorial(n - 1);
+   let result = 1;
+    if(Math.sign(n) == 1){
+      if (n <= 0) {
+        return 1;
+      }
+       console.log(n)
+       result = n * factorial(n - 1);
+    } else if(Math.sign(n) == -1) {
+      result = undefined
+    }
+    return result
 };
 
 // Do not edit below this line
