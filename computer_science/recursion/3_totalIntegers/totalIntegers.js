@@ -1,9 +1,9 @@
 let totalIntegers = function (array) {
   let result = 0;
-  for (let i = 0; i < array.length; i++) {
-    if (Array.isArray(array[i])) {
-      result += totalIntegers(array[i]);
-    } else if (typeof array[i] !== "string") {
+  for (let key in array) {
+    if (typeof array[key] == "object") {
+      result += totalIntegers(array[key]);
+    } else if (typeof array[key] !== "string") {
       result++;
     }
   }
