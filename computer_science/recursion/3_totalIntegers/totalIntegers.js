@@ -1,5 +1,8 @@
 let totalIntegers = function (array) {
   let result = 0;
+  if (typeof array !== "object") {
+    return undefined;
+  }
   for (let key in array) {
     if (typeof array[key] == "object") {
       result += totalIntegers(array[key]);
