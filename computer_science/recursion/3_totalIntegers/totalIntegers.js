@@ -3,7 +3,7 @@ let totalIntegers = function (array) {
   for (let i = 0; i < array.length; i++) {
     if (Array.isArray(array[i])) {
       result += totalIntegers(array[i]);
-    } else {
+    } else if (typeof array[i] !== "string") {
       result++;
     }
   }
