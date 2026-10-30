@@ -9,19 +9,19 @@ describe("totalIntegers", () => {
     expect(totalIntegers([1, 2, "3", 4])).toBe(3);
   });
 
-  test.skip("Counts all integers in a plain object", () => {
+  test("Counts all integers in a plain object", () => {
     expect(totalIntegers({ a: 1, b: "2", c: 3 })).toBe(2);
   });
 
-  test.skip("Does not find any integers in nested empty arrays", () => {
+  test("Does not find any integers in nested empty arrays", () => {
     expect(totalIntegers([[], [], []])).toBe(0);
   });
 
-  test.skip("Counts integers in deeply nested arrays", () => {
+  test("Counts integers in deeply nested arrays", () => {
     expect(totalIntegers([[[[[[[[[[[[[[4]]]]]], 246]]]]]]]])).toBe(2);
   });
 
-  test.skip("Counts negative integers", () => {
+  test("Counts negative integers", () => {
     expect(
       totalIntegers([
         5,
@@ -34,7 +34,7 @@ describe("totalIntegers", () => {
     ).toBe(14);
   });
 
-  test.skip("Does not count non-integer numbers", () => {
+  test("Does not count non-integer numbers", () => {
     expect(
       totalIntegers([
         5,
